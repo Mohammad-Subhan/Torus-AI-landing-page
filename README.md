@@ -1,1 +1,1 @@
-# Torus-AI-landing-page
+# Torus AI Landing Page
