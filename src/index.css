@@ -4,7 +4,13 @@
 @theme {
   --color-bg: #000000;
   --color-primary: #ffffff;
+  --color-text: #ffffff;
 }
+
+.circular-gradient {
+  background: radial-gradient(circle, #444444 0%, transparent 70%);
+}
+
 
 #root {
   font-family: "Manrope", sans-serif;
