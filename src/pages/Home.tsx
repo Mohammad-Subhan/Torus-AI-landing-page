@@ -3,8 +3,6 @@ import Navbar from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import FeatureCard from '@/components/FeatureCard'
 import Footer from '@/components/Footer'
-
-// Import all assets
 import magicWandIcon from '../assets/magic-wand.svg'
 import starIcon from '../assets/star.svg'
 import star2Icon from '../assets/star2.svg'
