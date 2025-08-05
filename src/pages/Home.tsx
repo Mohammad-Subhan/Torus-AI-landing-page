@@ -1,8 +1,9 @@
-import Prompt from '@/components/Prompt'
 import Navbar from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import FeatureCard from '@/components/FeatureCard'
 import Footer from '@/components/Footer'
+import TrendingPrompts from '@/components/TrendingPrompts'
+import { motion } from "motion/react"
 import magicWandIcon from '../assets/magic-wand.svg'
 import starIcon from '../assets/star.svg'
 import star2Icon from '../assets/star2.svg'
@@ -17,7 +18,7 @@ import img6 from '../assets/img6.jpg'
 
 const Home = () => {
     return (
-        <div className="bg-bg min-h-screen text-text">
+        <div className="bg-bg min-h-screen text-text w-full">
             <Navbar />
 
             {/* Top Section */}
@@ -61,10 +62,8 @@ const Home = () => {
                     <h1 className="text-4xl font-medium">Create more with Torus</h1>
                     <p className="text-center max-w-[600px] pt-5 text-xs leading-6 text-text/60">Discover endless creativity with PromptVerse. Generate diverse content effortlessly using prompts. Stay updated with real-time trends, automate tasks, and extract insights from any document or URL. All within a sleek, futuristic design. Create more, effortlessly.</p>
                 </div>
-                <div className="pt-12 flex flex-col gap-5">
-                    <div><Prompt /></div>
-                    <div><Prompt /></div>
-                    <div><Prompt /></div>
+                <div className="pt-12 w-full">
+                    <TrendingPrompts />
                 </div>
             </div>
 
@@ -156,9 +155,9 @@ const Home = () => {
             {/* Call to Action */}
             <div className="w-full h-screen flex items-center justify-center">
                 <div className="relative overflow-hidden w-full max-w-5xl mx-auto flex flex-col items-center justify-center gap-3 bg-white/5 rounded-md pt-24 pb-16">
-                    <h1 className="text-4xl font-semibold">Torus AI has no limitation.</h1>
-                    <h1 className="text-4xl font-semibold">Get started in a journey with Torus AI.</h1>
-                    <Button className="bg-primary cursor-pointer text-xs font-semibold rounded-full text-bg px-6 py-5 mt-10">
+                    <h1 className="text-4xl z-10 font-semibold">Torus AI has no limitation.</h1>
+                    <h1 className="text-4xl z-10 font-semibold">Get started in a journey with Torus AI.</h1>
+                    <Button className="bg-primary z-10 cursor-pointer text-xs font-semibold rounded-full text-bg px-6 py-5 mt-10">
                         Create an Account
                     </Button>
                     <div>
@@ -167,6 +166,12 @@ const Home = () => {
                         <img src={star2Icon} className="absolute h-14 w-14 top-5 right-10 z-10" alt="" />
                         <img src={star2Icon} className="absolute h-10 w-10 bottom-10 right-56 z-10" alt="" />
                     </div>
+                    <motion.div
+                        initial={{ x: "100%" }}
+                        animate={{ x: "-100%" }}
+                        transition={{ duration: 20, repeat: Infinity, ease: "linear", repeatType: "loop" }}
+                        className="absolute -bottom-[1900px] w-[2000px] h-[2000px] rounded-tr-full rounded-tl-full circular-gradient">
+                    </motion.div>
                 </div>
             </div>
 
