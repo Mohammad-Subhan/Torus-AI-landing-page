@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Button } from './ui/button'
+import logo from "../assets/logo.svg"
 
 const Navbar = () => {
     return (
@@ -11,7 +12,7 @@ const Navbar = () => {
                 <Link to="#">Discover</Link>
             </div>
             <div className="flex items-center gap-3 text-base">
-                <img src="src/assets/logo.svg" alt="Torus AI Logo" className="h-6" />
+                <img src={logo} alt="Torus AI Logo" className="h-6" />
                 Torus AI
             </div>
             <div className="flex items-center gap-6 text-xs">
