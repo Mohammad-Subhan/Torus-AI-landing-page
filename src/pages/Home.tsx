@@ -35,13 +35,17 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="flex items-center gap-3 pt-5">
-                    <Button variant="outline" className="z-[1] rounded-full text-text px-6 py-5 cursor-pointer">
+                    <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        className="z-[1] border border-white flex items-center justify-center text-sm font-medium gap-2 rounded-full text-text px-6 py-2.5 cursor-pointer">
                         Start Generating
-                        <img src={magicWandIcon} className="text-text h-5" alt="" />
-                    </Button>
-                    <Button className="z-[1] bg-primary cursor-pointer rounded-full text-bg px-6 py-5">
+                        <img src={magicWandIcon} className="text-text h-4" alt="" />
+                    </motion.button>
+                    <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        className="z-[1] bg-primary cursor-pointer text-sm font-medium rounded-full text-bg px-6 py-2.5">
                         Download
-                    </Button>
+                    </motion.button>
                 </div>
                 <div>
                     <img src={starIcon} alt="" className="h-7 w-7 absolute z-[1] left-[566px] -bottom-3.5" />
@@ -73,13 +77,17 @@ const Home = () => {
                     <h1 className="text-4xl font-medium">See Trending Prompts</h1>
                     <p className="text-center max-w-[600px] pt-5 text-xs leading-6 text-text/60">Discover endless creativity with PromptVerse. Generate diverse content effortlessly using prompts. Stay updated with real-time trends, automate tasks, and extract insights from any document or URL. All within a sleek, futuristic design. Create more, effortlessly.</p>
                     <div className="flex items-center gap-3 pt-5">
-                        <Button variant="outline" className="rounded-full text-text px-6 py-5 cursor-pointer">
+                        <motion.button
+                            whileHover={{ scale: 1.02 }}
+                            className="z-[1] border border-white flex items-center justify-center text-sm font-medium gap-2 rounded-full text-text px-6 py-2.5 cursor-pointer">
                             Start Generating
-                            <img src={magicWandIcon} className="text-text h-5" alt="" />
-                        </Button>
-                        <Button className="bg-primary cursor-pointer rounded-full text-bg px-6 py-5">
+                            <img src={magicWandIcon} className="text-text h-4" alt="" />
+                        </motion.button>
+                        <motion.button
+                            whileHover={{ scale: 1.02 }}
+                            className="z-[1] bg-primary cursor-pointer text-sm font-medium rounded-full text-bg px-6 py-2.5">
                             Download
-                        </Button>
+                        </motion.button>
                     </div>
                 </div>
                 <div className="pt-24">
@@ -157,9 +165,11 @@ const Home = () => {
                 <div className="relative overflow-hidden w-full max-w-5xl mx-auto flex flex-col items-center justify-center gap-3 bg-white/5 rounded-md pt-24 pb-16">
                     <h1 className="text-4xl z-10 font-semibold">Torus AI has no limitation.</h1>
                     <h1 className="text-4xl z-10 font-semibold">Get started in a journey with Torus AI.</h1>
-                    <Button className="bg-primary z-10 cursor-pointer text-xs font-semibold rounded-full text-bg px-6 py-5 mt-10">
-                        Create an Account
-                    </Button>
+                    <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        className="z-[1] bg-primary cursor-pointer text-xs font-medium rounded-full text-bg px-6 py-2.5 mt-10">
+                        Create an account
+                    </motion.button>
                     <div>
                         <img src={star3Icon} className="absolute top-0 left-0 z-10" alt="" />
                         <img src={star2Icon} className="absolute top-10 left-52 z-10" alt="" />

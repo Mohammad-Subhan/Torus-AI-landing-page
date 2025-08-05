@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Button } from './ui/button'
+import { motion } from "motion/react"
 import logo from "../assets/logo.svg"
 
 const Navbar = () => {
@@ -11,10 +12,12 @@ const Navbar = () => {
                 <Link to="#">Products</Link>
                 <Link to="#">Discover</Link>
             </div>
-            <div className="flex items-center gap-3 text-base">
+            <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-3 text-base">
                 <img src={logo} alt="Torus AI Logo" className="h-6" />
                 Torus AI
-            </div>
+            </motion.div>
             <div className="flex items-center gap-6 text-xs">
                 <Link to="#">Team</Link>
                 <Link to="#">Pricing</Link>
