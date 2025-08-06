@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Button } from './ui/button'
 import { motion } from "motion/react"
 import { Menu, X } from 'lucide-react'
-import logo from "../assets/logo.svg"
+import assets from '@/assets/assets'
 import { useState, useEffect } from 'react'
 
 const Navbar = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
             <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center gap-3 text-base">
-                <img src={logo} alt="Torus AI Logo" className="h-6" />
+                <img src={assets.logo} alt="Torus AI Logo" className="h-6" />
                 Torus AI
             </motion.div>
             <div className="hidden md:flex items-center gap-6 text-xs">

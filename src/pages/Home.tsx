@@ -4,17 +4,7 @@ import FeatureCard from '@/components/FeatureCard'
 import Footer from '@/components/Footer'
 import TrendingPrompts from '@/components/TrendingPrompts'
 import { motion } from "motion/react"
-import magicWandIcon from '../assets/magic-wand.svg'
-import starIcon from '../assets/star.svg'
-import star2Icon from '../assets/star2.svg'
-import star3Icon from '../assets/star3.svg'
-import trendingPromptsImg from '../assets/trending-prompts.svg'
-import img1 from '../assets/img1.jpg'
-import img2 from '../assets/img2.jpg'
-import img3 from '../assets/img3.jpg'
-import img4 from '../assets/img4.jpg'
-import img5 from '../assets/img5.jpg'
-import img6 from '../assets/img6.jpg'
+import assets from '@/assets/assets'
 
 const Home = () => {
     return (
@@ -39,7 +29,7 @@ const Home = () => {
                         whileHover={{ scale: 1.02 }}
                         className="z-[1] border border-white flex items-center justify-center text-xs sm:text-sm font-medium gap-2 rounded-full text-text px-6 py-2.5 cursor-pointer">
                         Start Generating
-                        <img src={magicWandIcon} className="text-text h-4" alt="" />
+                        <img src={assets.magicWandIcon} className="text-text h-4" alt="" />
                     </motion.button>
                     <motion.button
                         whileHover={{ scale: 1.02 }}
@@ -48,14 +38,14 @@ const Home = () => {
                     </motion.button>
                 </div>
                 <div>
-                    <img src={starIcon} alt="" className="h-7 w-7 hidden xs:flex absolute z-[1] left-[37.25%] -bottom-3.5" />
-                    <img src={starIcon} alt="" className="hidden sm:flex absolute h-3 w-3 z-[1] left-[16.73%] top-[313px]" />
-                    <img src={starIcon} alt="" className="h-3 w-3 absolute z-[1] left-[4.73%] top-[100px]" />
-                    <img src={starIcon} alt="" className="h-3 w-3 absolute z-[1] left-[65.75%] top-[155px]" />
-                    <img src={starIcon} alt="" className="h-3 w-3 hidden sm:flex absolute z-[1] left-[85.5%] top-[650px]" />
-                    <img src={starIcon} alt="" className="h-5 w-5 hidden sm:flex absolute z-[1] left-[32.86%] top-[170px]" />
-                    <img src={starIcon} alt="" className="h-5 w-5 hidden xs:flex absolute z-[1] left-[95.3%] top-[300px]" />
-                    <img src={starIcon} alt="" className="h-4 w-4 hidden xs:flex absolute z-[1] left-[5.5%] top-[600px]" />
+                    <img src={assets.starIcon} alt="" className="h-7 w-7 hidden xs:flex absolute z-[1] left-[37.25%] -bottom-3.5" />
+                    <img src={assets.starIcon} alt="" className="hidden sm:flex absolute h-3 w-3 z-[1] left-[16.73%] top-[313px]" />
+                    <img src={assets.starIcon} alt="" className="h-3 w-3 absolute z-[1] left-[4.73%] top-[100px]" />
+                    <img src={assets.starIcon} alt="" className="h-3 w-3 absolute z-[1] left-[65.75%] top-[155px]" />
+                    <img src={assets.starIcon} alt="" className="h-3 w-3 hidden sm:flex absolute z-[1] left-[85.5%] top-[650px]" />
+                    <img src={assets.starIcon} alt="" className="h-5 w-5 hidden sm:flex absolute z-[1] left-[32.86%] top-[170px]" />
+                    <img src={assets.starIcon} alt="" className="h-5 w-5 hidden xs:flex absolute z-[1] left-[95.3%] top-[300px]" />
+                    <img src={assets.starIcon} alt="" className="h-4 w-4 hidden xs:flex absolute z-[1] left-[5.5%] top-[600px]" />
                 </div>
                 <div className="absolute -bottom-[500px] w-[1000px] h-[1000px] rounded-tr-full rounded-tl-full circular-gradient"></div>
             </div>
@@ -81,7 +71,7 @@ const Home = () => {
                             whileHover={{ scale: 1.02 }}
                             className="z-[1] border border-white flex items-center justify-center text-xs xs:text-sm font-medium gap-2 rounded-full text-text px-6 py-2.5 cursor-pointer">
                             Start Generating
-                            <img src={magicWandIcon} className="text-text h-4" alt="" />
+                            <img src={assets.magicWandIcon} className="text-text h-4" alt="" />
                         </motion.button>
                         <motion.button
                             whileHover={{ scale: 1.02 }}
@@ -91,7 +81,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="pt-24">
-                    <img src={trendingPromptsImg} alt="trending prompts" className="w-full max-w-5xl" />
+                    <img src={assets.trendingPromptImage} alt="trending prompts" className="w-full max-w-5xl" />
                 </div>
             </div>
 
@@ -102,12 +92,12 @@ const Home = () => {
                     <p className="text-center max-w-[600px] pt-5 text-xs leading-6 text-text/60">Discover endless creativity with PromptVerse. Generate diverse content effortlessly using prompts. Stay updated with real-time trends, automate tasks, and extract insights from any document or URL. All within a sleek, futuristic design. Create more, effortlessly.</p>
                 </div>
                 <div className="mt-24 bg-text/5 p-8 rounded-md flex xs:flex-row flex-col gap-4 justify-center items-center">
-                    <img src={img1} alt="" className="h-[260px] xs:h-[480px] rounded-md" />
+                    <img src={assets.img1} alt="" className="h-[260px] xs:h-[480px] rounded-md" />
                     <div className="grid grid-cols-2 gap-4">
-                        <img src={img2} alt="" className="h-[124px] xs:h-[234px] rounded-md" />
-                        <img src={img3} alt="" className="h-[124px] xs:h-[234px] rounded-md" />
-                        <img src={img4} alt="" className="h-[124px] xs:h-[234px] rounded-md" />
-                        <img src={img5} alt="" className="h-[124px] xs:h-[234px] rounded-md" />
+                        <img src={assets.img2} alt="" className="h-[124px] xs:h-[234px] rounded-md" />
+                        <img src={assets.img3} alt="" className="h-[124px] xs:h-[234px] rounded-md" />
+                        <img src={assets.img4} alt="" className="h-[124px] xs:h-[234px] rounded-md" />
+                        <img src={assets.img5} alt="" className="h-[124px] xs:h-[234px] rounded-md" />
                     </div>
                 </div>
             </div>
@@ -125,7 +115,7 @@ const Home = () => {
                         <p className="text-sm leading-6 text-text/60">Generate Conversational, Long-form or Short-form Voice Content With Consistent Quality and Performances.</p>
                         <p className="text-sm leading-6 text-text/60">Secure and Private Voice Generations with Full Commercial and Copyrights.</p>
                         <div className="xs:hidden block">
-                            <img src={img6} alt="" className="rounded-md" />
+                            <img src={assets.img6} alt="" className="rounded-md" />
                         </div>
                         <div className="flex gap-3">
                             <div className="flex items-center text-center justify-center border border-white rounded-full w-fit py-2.5 px-7 text-sm">Train Voice Models</div>
@@ -141,7 +131,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="hidden xs:block">
-                        <img src={img6} alt="" className="rounded-md" />
+                        <img src={assets.img6} alt="" className="rounded-md" />
                     </div>
                 </div>
             </div>
@@ -174,11 +164,11 @@ const Home = () => {
                         Create an account
                     </motion.button>
                     <div>
-                        <img src={star3Icon} className="xs:block hidden absolute top-0 left-0 z-[1]" alt="" />
-                        <img src={star2Icon} className="xs:block hidden absolute top-10 left-52 z-[1]" alt="" />
-                        <img src={star2Icon} className="absolute h-14 w-14 top-5 right-10 z-[1]" alt="" />
-                        <img src={star2Icon} className="xs:block hidden absolute h-10 w-10 bottom-10 right-56 z-[1]" alt="" />
-                        <img src={star2Icon} className="absolute h-10 w-10 bottom-10 right-80 z-[1]" alt="" />
+                        <img src={assets.starIcon3} className="xs:block hidden absolute top-0 left-0 z-[1]" alt="" />
+                        <img src={assets.starIcon2} className="xs:block hidden absolute top-10 left-52 z-[1]" alt="" />
+                        <img src={assets.starIcon2} className="absolute h-14 w-14 top-5 right-10 z-[1]" alt="" />
+                        <img src={assets.starIcon2} className="xs:block hidden absolute h-10 w-10 bottom-10 right-56 z-[1]" alt="" />
+                        <img src={assets.starIcon2} className="absolute h-10 w-10 bottom-10 right-80 z-[1]" alt="" />
                     </div>
                     <motion.div
                         initial={{ x: "100%" }}
