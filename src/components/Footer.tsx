@@ -18,12 +18,12 @@ const letsChatIcons = [
 
 const Footer = () => {
     return (
-        <div className="relative overflow-hidden w-full border-t border-text/20">
+        <div className="relative overflow-hidden w-full border-t border-text/20 px-4">
             <div className="flex flex-col w-full max-w-5xl mx-auto py-10">
-                <div className="flex gap-3 h-96">
-                    <div>
+                <div className="flex justify-around sm:h-96 h-[500px]">
+                    <div className="flex flex-col">
                         <p className="text-[9px] text-text/40 tracking-wider pb-5">Navigation</p>
-                        <div className="grid grid-cols-3 gap-2">
+                        <div className="grid sm:grid-cols-3 gap-5">
                             <div className="flex flex-col gap-1 w-36">
                                 <Link className="text-[11px] tracking-wider" to="#">Schedule</Link>
                                 <Link className="text-[11px] tracking-wider" to="#">Courses</Link>
@@ -38,16 +38,16 @@ const Footer = () => {
                             <div className="w-36"></div>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="flex flex-col">
                         <div className="pb-14">
                             <p className="text-[9px] text-text/40 tracking-wider pb-4">Contact Us</p>
-                            <div className="grid grid-cols-2">
+                            <div className="grid sm:grid-cols-2 grid-cols-1 gap-1">
                                 <p className="text-[11px] tracking-wider">+1 (406) 555-0120</p>
                                 <p className="text-[11px] tracking-wider">help@torusai.com</p>
                                 <p className="text-[11px] tracking-wider">+1 (406) 555-0120</p>
                             </div>
                         </div>
-                        <div className="flex gap-16 pb-14">
+                        <div className="flex sm:flex-row flex-col xs:gap-16 gap-10 pb-14">
                             <div>
                                 <p className="text-[9px] text-text/40 tracking-wider pb-4">Follow Us</p>
                                 <div className="flex gap-2">
